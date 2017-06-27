@@ -1,0 +1,13 @@
+<div *ngIf="user">
+	<h2>Szczegóły {{user.firstName}} {{user.secondName}}</h2>
+	<div><label>id: </label>{{user.id}}</div>
+	<div><label class="info-label">Imię: </label><input [(ngModel)]="user.firstName" placeholder="firstName"/></div>
+	<div><label class="info-label">Nazwisko: </label><input [(ngModel)]="user.secondName" placeholder="secondName"/></div>
+	<div><label class="info-label">Numer domu: </label><input [(ngModel)]="user.houseNumber" placeholder="houseNumber"/></div>
+	<div><label class="info-label">Numer mieszkania: </label><input [(ngModel)]="user.apartamentNumber" placeholder="apartamentNumber"/></div>
+	<div><label class="info-label">Kod pocztowy: </label><input [(ngModel)]="user.postalCode" placeholder="postalCode"/></div>
+	<div><label class="info-label">Data urodzin: </label>{{user.dayBirth}}</div>
+	<div><label class="info-label">Wiek: </label>{{user.age}}</div>
+	<button (click)="goBack()">Wróć</button>
+	<button (click)="save()">Save</button>
+</div>

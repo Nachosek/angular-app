@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center; margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}
+
+li {
+  text-align: left;
+}
+
+.info {
+  width: 50%;
+  margin: auto;
+}
